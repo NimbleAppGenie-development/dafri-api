@@ -128,6 +128,8 @@ All payment requests must be sent using the HTTP POST method and the request dat
 #### Response for Withdrawal:
 **return_url -** The Merchant will provide the base url, and DafriBank will convert this into the transaction_id by decoding the given url. Decoding means converting it through Base 64 Decode and converting it into the link.
 
-**1. For example:** Before decoding,10005 is the format of transaction id, and after decoding final URL will look like this - BASE_URL/Decoded_Value
+**1. For example:** Before decoding,10005 is the format of transaction id, and after decoding final URL will look like this - **BASE_URL/Decoded_Value**
 
 **2. transaction_id:** Every transaction ID will be unique. After the entire process, we will provide a transaction id with the return url.
+
+**Note -** Transaction_id will be given to the merchant just for reference to show the message of withdrawal request that has been sent successfully to the merchant. When the user initiates a withdrawal request, the merchant can approve, edit, or decline on the DafriBank portal.
