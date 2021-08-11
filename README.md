@@ -12,7 +12,7 @@ All payment requests must be sent using the HTTP POST method and the request dat
     <input type="hidden" name="order_id" value="10005">
     <input type="hidden" name="order_amount" value="10">
     <input type="hidden" name="currency_code" value="USD">
-    <input type="hidden" name="merchant_key" value="yTmSweFuEHiv">
+    <input type="hidden" name="merchant_key" value="XXXXXXXXXX"> // Merchant Key provided by DafriBank support team
     <input type="hidden" name="return_url" value="https://www.dafribank.com/success">
     <input type="submit" name="submit" value="submit">
 </form>
@@ -95,7 +95,7 @@ All payment requests must be sent using the HTTP POST method and the request dat
 
 ```
 <form action ="https://www.dafribank.com/merchat-withdrawal" method="post" >
-    <input type="hidden" name="merchant_key" value="yTmSweFuEHiv">
+    <input type="hidden" name="merchant_key" value="XXXXXXXXXX"> // Merchant Key provided by DafriBank support team
     <input type="text" name="user_email">
     <input type="text" name="amount">
     <input type="text" name="remark">
